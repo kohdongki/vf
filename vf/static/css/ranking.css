@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#logo {
+  padding-left: 2rem;
+}
+#navbar {
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: baseline;
+  transition: 0.4s;
+  z-index: 1;
+}
+nav a {
+  color: gray;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.nav-content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.nav-content p {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+hr {
+  margin: 0px;
+}
+
+main {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.intro div {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: 100%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(157, 157, 180, 0.5)
+    ),
+    url("./img/rank_blog.jpg");
+}
+
+#btn {
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  background: #662ac7;
+  outline: 2px solid #662ac7;
+  color: white;
+  font-size: 1rem;
+}
+
+#btn:hover {
+  background: transparent;
+  transition: 0.4s;
+  color: #662ac7;
+}
+
+.body_text {
+  display: block;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  border-top: 0px solid rgb(197, 197, 197);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ranking_menu {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+  border: 0px solid rgb(197, 197, 197);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cate_menu {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+  border: 0px solid rgb(197, 197, 197);
+}
+
+.cate_menu button {
+  width: 5rem;
+  background-color: #f8585b;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  vertical-align: middle;
+}
+
+th,
+td {
+  border-bottom: 0px solid #444444;
+  padding: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+table div {
+  height: 50px;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ranking img {
+  width: 30px;
+  height: 30px;
+}
+
+.channel {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  border: 1px solid rgb(197, 197, 197);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* footer {
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+@media (max-width: 1024px) {
+  .header_middle {
+    display: none;
+  }
+} */
+
+.f-container {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  align-content: center;
+}
+
+footer p {
+  margin: 1rem;
+  display: inline-flex;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.shadow {
+  box-shadow: 0 4px 5px -2px #525050;
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}

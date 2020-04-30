@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/6eff62a49b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="first" class="first">
+      <nav id="navbar">
+        <div id="logo"><p>LOGO</p></div>
+        <div class="nav-content">
+          <a href="{% url 'index' %}"><p>HOME</p></a>
+          <p>SERVICES</p>
+          <a href="#features"><p>FEATURES</p></a>
+
+          <a href="./blog.html"><p>BLOG</p></a>
+          <a href="./contact.html"><p>CONTACT</p></a>
+        </div>
+      </nav>
+      <div class="intro">
+        <h1>베트남 유튜브 광고</h1>
+        <h1>최신 트렌드 한방에</h1>
+        <a href="#SeeMore"><button id="btn" type="submit">자세히 보기</button></a>
+      </div>
+    </div>
+
+    <main id="container">
+      <div id='SeeMore'>
+      <div class="introduction">
+        <h1> 베트남 인플루언서, 찾기 힘드셨죠? </h1>
+<br>
+<br>
+        <h3>'진짜' 베트남 유튜버 정보</h3>
+        <h3> ㅇㅇ에 다 있습니다.</h3>
+      </div>
+
+      <div class="key">
+        <div class="keyword">
+          <i class="fab fa-youtube"></i>
+          <h1>베트남 유튜버 모아보기</h1>
+          <br>
+          <p>주요 기능 및 키워드</p>
+        </div>
+
+        <div class="keyword">
+          <i class="fas fa-ad"></i>
+          <h1>인플루언서 마케팅</h1>
+          <br>
+          <p>주요 기능 및 키워드</p>
+        </div>
+        <div class="keyword">
+          <i class="fas fa-bullhorn"></i>
+          <h1>키워드로 검색하기</h1>
+          <br>
+          <p>주요 기능 및 키워드</p>
+        </div>
+      </div>
+    </div>
+      <div id="features" class="features">
+        <div class="feature1">
+          <div class="f-left">
+            <img class="feature-img" src="{% static 'img/feature_1.png' %}" alt="img" />
+          </div>
+          <div class="f-right">
+            <h1>최근에 가장 빨리 성장한 베트남 먹방 유튜버는 누구일까?</h1>
+            <p>
+              
+            </p>
+            <ul>
+              <li><i class="far fa-check-square"></i> first</li>
+              <li><i class="far fa-check-square"></i>second</li>
+              <li><i class="far fa-check-square"></i>third</li>
+            </ul>
+            <button id="btn">Watch Intro</button>
+          </div>
+        </div>
+        <div class="feature2">
+          <div class="f-right">
+            <h1>10대 20</h1>
+            <p>
+              Just get the code and sit tight, you will witness its power and
+              performance in lead generations. Is simple yet Powerful and
+              productive technology. Experience, then believe.
+            </p>
+            <ul>
+              <li><i class="far fa-check-square"></i>first</li>
+              <li><i class="far fa-check-square"></i>second</li>
+              <li><i class="far fa-check-square"></i>third</li>
+            </ul>
+            <button id="btn">Watch Intro</button>
+          </div>
+          <div class="f-left">
+            <img class="feature-img" src="{% static 'img/feature_1.png' %}" alt="img" />
+          </div>
+        </div>
+      </div>
+      <div id="reviews">
+      <h2>Review</h2>
+
+      <ol >
+        <div class='review'>
+        <i id= 'firstP'class="fas fa-user-circle"></i>
+        <h2> B기업 해외영업팀 ㅇ사원 </h2>
+          <span class='rating'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        <p>
+         베트남 유튜버에 대한 정보가 부족했는데, 최신 베트남 인플루언서 정보를 빠르게 알 수 있어서 좋아요.
+        </p>
+      </div>
+      </ol>    
+      
+      <ol >
+        <div class='review'>
+          <i id='seceondP'class="far fa-user-circle"></i>
+        <h2> S기업 홍보팀 ㅇ과장 </h2>
+        <span class='rating'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+        <p>
+         제품 특성에 따라 가장 마케팅에 효과적일 것 같은 유튜버를 추천해줘서 노력과 시간이 많이 절약됩니다.
+        </p>
+      </div>
+      </ol>
+
+      <ol >
+        <div class='review'>
+        <i id= 'thirdP'class="fas fa-user-circle"></i>
+        <h2> F기업 마케팅팀 ㅇ대리 </h2>
+          <span class='rating'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+        <p>
+         한국에서도 베트남 유튜브 트렌드를 쉽게 파악할 수 있어서 편리해요.
+        </p>
+      </div>
+      </ol>
+    </div>
+
+    </div>
+
+      <div id="blog" class="blog">
+        <div id="blog_content" class="blog_content">
+          <img id='B_img' src="{% static 'img/4.jpg' %}" alt="" />
+          <h2>"blog Title"</h2></div>
+        <div id="blog_content" class="blog_content">
+          <img id='B_img' src="{% static 'img/5.jpg' %}" alt="" />
+          <h2>"blog Title"</h2></div>
+        </div>
+       
+      </div>
+
+      <div class="contact">
+        <h1>궁금하신 점이 있으신가요?</h1>
+        <br>
+        <br>
+        <a href="./contact.html"><button id="btn">문의하기</button></a>
+      </div>
+      <footer>
+        <div class="f-container">
+          <div id="logo">LOGO</div>
+          <br />
+          <div class="p">
+            <p>HOME</p>
+            <p>ABOUT</p>
+            <p>TERM</p>
+            <p>PRIVACY</p>
+          </div>
+          <br />
+          <span>Copyright © 2020 000. All Rights Reserved. </span>
+        </div>
+      </footer>
+     
+    </main>
+
+    <script src="{% static 'js/first.js' %}"></script>
+  </body>
+</html>

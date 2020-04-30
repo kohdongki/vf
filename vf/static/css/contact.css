@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  padding-left: 2rem;
+}
+
+#navbar {
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: baseline;
+  transition: 0.4s;
+  z-index: 1;
+}
+nav a {
+  color: gray;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.nav-content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.nav-content p {
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.contact-section {
+  height: 160vh;
+  padding: 10rem 0;
+}
+
+.container {
+  align-content: center;
+  align-items: center;
+}
+
+.head {
+  margin: 7rem 0;
+}
+.row {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #535353;
+  padding: 15px 20px;
+}
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid darkred;
+}
+
+form {
+  width: 100%;
+}
+label {
+  display: initial;
+}
+
+.name_company,
+.email_phone {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  row-gap: 2rem;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+.inquiry {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 30rem 30rem;
+  padding-top: 2rem;
+}
+
+.name_company input,
+.email_phone input {
+  width: 25rem;
+}
+.inquiry input {
+  width: 59rem;
+}
+
+#btn {
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  margin-top: 5rem;
+  background: #662ac7;
+  outline: 2px solid #662ac7;
+  color: white;
+  font-size: 1rem;
+}
+#btn:hover {
+  background: transparent;
+  transition: 0.4s;
+  color: #662ac7;
+}
+
+.f-container {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  align-content: center;
+}
+
+footer p {
+  margin: 1rem;
+  display: inline-flex;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.shadow {
+  box-shadow: 0 4px 5px -2px #525050;
+}
